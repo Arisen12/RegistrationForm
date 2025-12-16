@@ -1,0 +1,117 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background-color: #ffffff;
+  background-image: url(https://i.pinimg.com/736x/af/5a/3c/af5a3c96f13f32682b82e2beca52d61f.jpg);
+  background-size: cover;
+  background-position: center;
+  color: #000000;
+  line-height: 1.6;
+}
+
+/* Layout */
+header, footer {
+  background-color: #000000;
+  color: #ffffff;
+  text-align: center;
+  padding: 1rem;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  padding: 2rem;
+}
+
+/* Form container */
+form {
+  width: 100%;
+  max-width: 420px;
+  border: 1px solid #000000;
+  padding: 2rem;
+  background-color: #ffffff;
+  border-radius: 10px;
+}
+
+/* Headings */
+h1 {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+/* Labels */
+label, p {
+  font-size: 0.9rem;
+  font-weight: bold;
+}
+
+/* Inputs */
+input, select, button {
+  width: 100%;
+  padding: 0.6rem;
+  margin-top: 0.3rem;
+  border: 1px solid #000000;
+  background-color: #ffffff;
+  color: #000000;
+  font-size: 0.9rem;
+  border-radius: 5px;
+}
+
+/* Radio & checkbox alignment */
+input[type="radio"],
+input[type="checkbox"] {
+  width: auto;
+  margin-right: 0.4rem;
+}
+
+/* Button */
+button {
+  background-color: #000000;
+  color: #ffffff;
+  cursor: pointer;
+  font-weight: bold;
+  margin-top: 1rem;
+}
+
+button:hover {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+/* Links */
+a {
+  color: #000000;
+  text-decoration: underline;
+}
+
+a:hover {
+  opacity: 0.7;
+}
+
+/* Footer */
+footer {
+  margin-top: 2rem;
+  font-size: 0.8rem;
+}
+
+footer a {
+  display: inline-block;
+  padding: 0.6rem 1.2rem;
+  border: 1px solid #000000;
+  background-color: #000000;
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 10px;
+}
+
+footer a:hover {
+  background-color: #ffffff;
+  color: #000000;
+
+}

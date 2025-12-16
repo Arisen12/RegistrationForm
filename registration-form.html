@@ -1,0 +1,98 @@
+<!-- Arjiane Jorgio IT241 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Registration Form</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+<header>
+<h1>Registration</h1>
+</header>
+
+
+<main>
+<form action="#" method="post">
+<!-- Full Name -->
+<label for="fullname">Full Name:</label><br>
+<input type="text" id="fullname" name="fullname" required minlength="3"><br><br>
+
+
+<!-- Email -->
+<label for="email">Email Address:</label><br>
+<input type="email" id="email" name="email" required><br><br>
+
+
+<!-- Password -->
+<label for="password">Password:</label><br>
+<input type="password" id="password" name="password" required minlength="8"
+pattern="^(?=.*[0-9])(?=.*[\W_]).{8,}$"><br><br>
+
+
+<!-- Confirm Password -->
+<label for="confirm">Confirm Password:</label><br>
+<input type="password" id="confirm" name="confirm" required><br><br>
+
+
+<!-- Gender -->
+<p>Gender:</p>
+<input type="radio" id="male" name="gender" value="Male" required>
+<label for="male">Male</label><br>
+<input type="radio" id="female" name="gender" value="Female">
+<label for="female">Female</label><br>
+<input type="radio" id="other" name="gender" value="Other">
+<label for="other">Other</label><br><br>
+
+
+<!-- Date of Birth -->
+<label for="dob">Date of Birth:</label><br>
+<input type="date" id="dob" name="dob" required max="2007-12-16"><br><br>
+
+
+<!-- Country -->
+<label for="country">Country:</label><br>
+<select id="country" name="country" required>
+<option value="">--Select Country--</option>
+<option value="Philippines">Philippines</option>
+<option value="USA">USA</option>
+<option value="Japan">Japan</option>
+<option value="Other">Other</option>
+</select><br><br>
+
+
+<!-- Terms & Conditions -->
+<input type="checkbox" id="terms" name="terms" required>
+<label for="terms">I agree to the <a href="terms.html" target="_blank">Terms & Conditions</a></label><br><br>
+
+
+<!-- Submit -->
+<button type="submit">Register</button>
+</form>
+</main>
+
+
+<footer>
+<p>&copy; Arjiane Jorgio 2025 Registration System</p>
+</footer>
+
+
+<script>
+const password = document.getElementById('password');
+const confirm = document.getElementById('confirm');
+
+
+confirm.addEventListener('input', () => {
+if (confirm.value !== password.value) {
+confirm.setCustomValidity('Passwords do not match');
+} else {
+confirm.setCustomValidity('');
+}
+});
+</script>
+
+
+</body>
+</html>
